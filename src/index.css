@@ -342,14 +342,11 @@ height: 100px;
 }
 
 .createpost_form button[type="submit"]{
-  margin-top: 40px;
+  margin-top: 5px;
 }
 
-.createpost_section{
- padding: 10px;
+input[type="file"]{
+  margin-top: 45px;
 }
 
-.createpost_section .cancel{
-  margin-left: 10px;
-}
 

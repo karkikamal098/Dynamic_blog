@@ -34,12 +34,18 @@ const CreatePost= () =>{
     <section className='createpost_section'>
       <h1>Create Post</h1>
       <form className='createpost_form'>
-        <input type="text" placeholder="Title" className='createpost_inner_title' />
+        <input type="text" placeholder="Title" value={title} onChange={e=> setTitle(e.target.value)} className='createpost_inner_title' autoFocus/>
+        <select value={category} onChange={e=>setCategory(e.target.value)}>
+             {
+              POST_CATEGORIES.map(category => <option key={category}>{category}</option>)
+             }
+          </select>
         <ReactQuill modules={modules} formats={formats} value={description} onChnage={setDescription} className='createpost_inner_body'/>
+        <input type='file' onChange={e=> setThumbnail(e.target.files[0])} accept='png,jpg,jpeg'/>
         <button type="submit">Submit</button>
       </form>
       
-      <button className='cancel'>submit</button>
+     
 
     </section>
   
