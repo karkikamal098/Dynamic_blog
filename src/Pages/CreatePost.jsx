@@ -34,6 +34,7 @@ const CreatePost= () =>{
     <section className='createpost_section'>
       <h1>Create Post</h1>
       <form className='createpost_form'>
+        <small>This is the error message</small>
         <input type="text" placeholder="Title" value={title} onChange={e=> setTitle(e.target.value)} className='createpost_inner_title' autoFocus/>
         <select value={category} onChange={e=>setCategory(e.target.value)}>
              {

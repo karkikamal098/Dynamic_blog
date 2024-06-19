@@ -14,7 +14,7 @@ import Logout from './Pages/Logout';
 import CategoryPosts from './Pages/CategoryPosts';
 import CreatePost from './Pages/CreatePost.jsx';
 import EditPost from './Pages/EditPost';
-import Dashboard from './Pages/Dashboard';
+import Dashboard from './Pages/Dashboard.jsx';
 
 const router = createBrowserRouter([
   {
