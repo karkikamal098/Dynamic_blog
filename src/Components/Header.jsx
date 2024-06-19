@@ -9,7 +9,7 @@ const Header = () => {
    <nav>
     <div className="container nav_container">
       <Link to="/" className="nav_logo">
-    <img src={Logo} alt="Navbar_logo"></img>
+    <img src={Logo} alt="Navbar_logo" className='nav_img'></img>
       </Link>
       <ul className="nav_menu">
        <li><Link to="/posts/:category">Blogs Daju</Link></li>

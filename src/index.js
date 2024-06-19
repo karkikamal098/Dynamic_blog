@@ -15,6 +15,7 @@ import CategoryPosts from './Pages/CategoryPosts';
 import CreatePost from './Pages/CreatePost.jsx';
 import EditPost from './Pages/EditPost';
 import Dashboard from './Pages/Dashboard.jsx';
+import UserProfile from './Pages/UserProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
       {path:"posts/:category", element: <CategoryPosts />},
       {path:"myposts/:id", element: <Dashboard/>},
       {path:"createpost", element: <CreatePost/>},
-      {path:"posts/id/edit", element: <EditPost/>}
+      {path:"posts/id/edit", element: <EditPost/>},
+      {path:"userprofile", element: <UserProfile/>}
     ]
   }
 ])

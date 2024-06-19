@@ -54,7 +54,7 @@ nav {
   display: block;
 }
 
-img {
+.nav_img{
   width: 60px;
 }
 
@@ -207,6 +207,7 @@ h2 {
   padding: 5px;
   border-radius: 3px;
   border: none;
+  margin-right: 5px;
 }
 
 
@@ -410,3 +411,83 @@ small{
   background-color:rgb(65, 63, 63);
   color: black;
 }
+
+
+/* --------Userprofile-------- */
+
+.profile_container{
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.profile_details{
+  width: 100%;
+}
+
+.avatar_wrapper{
+  width:15rem;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-inline:auto;
+  margin-top: 1rem;
+}
+
+
+.profile_avatar img{
+  width:80%;
+  height:80%;
+  border-radius: 50%;
+  background-color: #f11818;
+  border:5px solid rgb(156, 154, 154);
+}
+
+.avatar_form{
+  height:1rem;
+}
+
+.avatar_form input{
+  visibility: hidden;
+}
+
+.avatar_form label, .profile_avatar-btn{
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  right:2rem;
+  bottom:1.4rem;
+  top:9rem;
+  width:3rem;
+  height:3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  
+
+}
+
+.avatar_form label:hover{
+  cursor: pointer;
+}
+
+.profile_avatar-btn{
+  cursor: pointer;
+  padding: 0;
+  font-size:2rem;
+  background:var(--color-primary);
+  z-index: 2;
+}
+
+.profile_details h1{
+  margin-top:1rem;
+}
+
+.avatar_form{
+  margin-top:2rem;
+  margin-inline:auto;
+  width: var(--form-width);
+}
+
+
+
+
