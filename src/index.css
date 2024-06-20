@@ -415,10 +415,13 @@ small{
 
 /* --------Userprofile-------- */
 
+
+
 .profile_container{
   display: grid;
   place-items: center;
   text-align: center;
+  margin-top: 10px;
 }
 
 .profile_details{
@@ -488,6 +491,15 @@ small{
   width: var(--form-width);
 }
 
+.userdata_form{
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+}
 
-
-
+.userdata_input{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  margin-bottom: 4px;
+}
