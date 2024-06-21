@@ -48,11 +48,11 @@ const UserProfile = () => {
         <form className="userdata_form">
           <div className="userdata_input">
             <small>This is the error message</small>
-            <input type="text" value={name} onClick={e=>setName(e.target.value)} placeholder="Name" />
-            <input type="email" value={email} onClick={e=>setEmail(e.target.value)} placeholder="Email" />
-            <input type="password"  value={password} onClick={e=>setPassword(e.target.value)} placeholder="password" />
-            <input type="password"  value={newPassword} onClick={e=>setNewPassword(e.target.value)} placeholder="new password" />
-            <input type="password"  value={confirmPassword} onClick={e=>setConfirmPassword(e.target.value)} placeholder="confirm password" />
+            <input type="text" name="name" value={name} onChange={e=>setName(e.target.value)} placeholder="Name" />
+            <input type="email" name="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Email" />
+            <input type="password" name="password" value={password} onChange={e=>setPassword(e.target.value)} placeholder="password" />
+            <input type="password" name="newPassword" value={newPassword} onChange={e=>setNewPassword(e.target.value)} placeholder="new password" />
+            <input type="password" name="confirmPassword" value={confirmPassword} onChange={e=>setConfirmPassword(e.target.value)} placeholder="confirm password" />
           </div>
           <div className="userdata_btn">
             <button className="btn_category">Save</button>
