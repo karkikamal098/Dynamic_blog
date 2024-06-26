@@ -364,18 +364,22 @@ small{
   row-gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #bdb7b7;
-  padding:5px;
+  padding:5px 20px 5px 20px;
   border-radius: 5px;
+}
+
+.dashboard_item img{
+  width: 60px;
 }
 
 .dashboard_title{
   margin-top: 2rem;
-  margin-left: 15rem;
+  margin-left: 20rem;
 }
 
 .dashboard_btn_view{

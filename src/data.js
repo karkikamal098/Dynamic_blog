@@ -10,7 +10,7 @@ const DUMMY_posts = [
       id: '1',
       thumbnail: Thumbnail1,
       category: "Technology",
-      title: "The Future of Artificial Intelligence",
+      title: "Future of Artificial Intelligence",
       description: "Explore the latest advancements with the best technology that goes around the globe.",
       authorId: 1001
     },
