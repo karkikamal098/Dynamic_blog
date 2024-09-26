@@ -16,11 +16,12 @@ import CreatePost from './Pages/CreatePost.jsx';
 import EditPost from './Pages/EditPost';
 import Dashboard from './Pages/Dashboard.jsx';
 import UserProfile from './Pages/UserProfile.jsx';
+import UserProvider from './context/userContext.js';
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <Layout/>,
+    element: <UserProvider><Layout/></UserProvider>  ,
     errorElement: <ErrorPage/>,
     children:[
       {index:true, element: <Home />},
